@@ -1,0 +1,554 @@
+/*Navigation CSS*/
+
+.nav {
+    display: flex;
+    background-color: white;
+  }
+
+  .logo {
+    display: inline-block;
+    background-color: white;
+    background-image: url("../pictures/Logo\ small.png");
+    border-radius: 5px;
+    height: 90px;
+    width: 110px;
+    margin: 50px;
+    margin-top: 25px;
+  }
+  
+ .right {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+.left {
+  height: 90px;
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+   
+  .right a {
+    color: #00171E;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family:'Source Sans Pro', serif,'Times New Roman',Times;
+  }
+  
+  .right button {
+    background-color: #00698A;
+    color: white;
+    font-size: 16px;
+    padding: 25px;
+    width: 171px;
+    height: 73px;
+    margin-right: 50px;
+    border-color:transparent;
+  }
+
+  ul {
+    color: #00171E;
+    text-align: right;
+    margin-right: 100px;
+    padding: 10px;
+    list-style: none;
+    font-family:'Source Sans Pro', serif,'Times New Roman',Times;
+    font-size: 20px;
+  }
+
+  /*Text CSS*/
+  
+  .text {
+    background: none;
+    width: fit-content;
+    color: #00698A;
+    position: left;
+  }
+  .text p {
+    font-family:'Source Sans Pro', serif,'Times New Roman',Times;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 80px;
+    
+  }
+  .text h1 {
+    font-family: 'Playfair Display', serif, 'Times New Roman', Times;
+    text-align: center;
+    font-size: 45px;
+    color: #00171E;
+
+  }
+
+  .text h2 {
+    font-family: 'Playfair Display', serif, 'Times New Roman', Times;
+    text-align: left;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: #00698A;
+  }
+
+  .text h3 {
+    font-family: 'Playfair Display', serif, 'Times New Roman', Times;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .text h4 {
+    font-family: 'Playfair Display', serif, 'Times New Roman', Times;
+    text-align: left;
+    font-size: 20px;
+    color: #00698A;
+    margin-left: 80px;
+  }
+
+  .text li {
+    font-family:'Source Sans Pro', serif,'Times New Roman',Times;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 5px;
+    color:#00171E;
+    margin-left: 70px;
+  }
+  
+  /* Hero Styles */
+
+  .hero {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    background-image: url("../pictures/hero\ 2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items:flex-start;
+  }
+
+  /*My UX Skills section coded using CSS flex*/
+
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    height: 420px;
+    width: 100%;
+    margin-left: 150px;
+    margin-bottom: 100px;
+  }
+  
+ 
+  .research .definition .prototyping {
+    /*height: 100%;
+    width: 100%;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .research {
+    margin-top: 20px;
+    background-color: #E8F2EF;
+    width: 25%;
+    height: 300px;
+    border-style: solid;
+    border-color:#00698A;
+    
+  }
+  
+  .definition {
+    margin-top: 20px;
+    background-color: #E8F2EF;
+    width: 25%;
+    height: 300px;
+    margin-left: 120px;
+    border-style: solid;
+    border-color:#00698A;
+  }
+
+  .prototyping {
+    margin-top: 20px;
+    background-color: #E8F2EF;
+    width: 25%;
+    height: 300px;
+    margin-left: 120px;
+    border-style: solid;
+    border-color:#00698A;
+  }
+
+
+  .icons {
+    width: 70px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 100px;
+  }
+
+
+  /* My Work Constructed Using CSS Grid */
+  
+  #categoryGrid {
+    margin: 0px 5%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    height:2000px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "adoptoneblock title1"
+    "title2 nasa"
+    "mlord title3";  
+  }
+
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    cursor: pointer;
+    display: grid;
+    align-content: flex-start;
+  }
+
+  #adoptoneblock {
+    grid-area: adoptoneblock;
+    background-image: url("..//pictures/adoptoneblockdestopmockup.png");
+    background-size: 90%;
+    background-position: cover;    
+  }
+
+  #nasa {
+    grid-area: nasa;
+    background-image: url("../pictures/nasadesktopmockup.png");
+    background-size: 90%;
+    background-position: cover;
+  }
+
+  #mlord {
+    grid-area: mlord;
+    background-image: url("../pictures/mlordhomepagemockup.png");
+    background-size: 90%;
+    background-position: cover;
+  }
+
+  #title1 {
+    grid-area: title1;
+    background-color: none;
+    margin-top: 50px;
+    margin-left: 75px;
+    
+  }
+
+  #title2 {
+    grid-area: title2;
+    background-color: none;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  #title3 {
+    grid-area: title3;
+    background-color: none;
+    margin-top: 50px;
+    margin-left: 75px;
+  }
+
+  .categoryGridArea button {
+    background-color: #00698A;
+    color: white;
+    font-size: 16px;
+    padding: 25px;
+    width: 171px;
+    height: 73px;
+    margin: 50px;
+    border-color:transparent;
+  }
+
+
+  
+  /* Heading for My Work Section */
+
+  .heading {
+    text-align:left;
+    margin-left: 0px;
+    margin-top: 75px;
+    width: 85%; 
+  }
+
+  .heading h2 {
+    font-family: 'Playfair Display', serif, 'Times New Roman', Times;
+    text-align: left;
+    font-size: 34px;
+    color: #00698A;
+  }
+
+  .heading p {
+    font-family:'Source Sans Pro', serif,'Times New Roman',Times;
+    text-align: left;
+    font-size: 22px;
+    padding-top: 20px;
+  }
+  
+  /* Footer Styles */
+
+  #categoryGrid2 {
+
+    margin-top: 0px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas:
+    "footer footer2 footer3"  
+  }
+
+  .categoryGridArea2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    cursor: pointer;
+    display: grid;
+    align-content: flex-start;
+  }
+
+  #footer {
+    grid-area: footer;
+    background-color: #E8D5B5;
+  }
+
+  #footer2 {
+    grid-area: footer2;
+    background-color: #E8D5B5;  
+  }
+
+  #footer3 {
+    grid-area: footer3;
+    background-color: #E8D5B5;
+  }
+
+  .categoryGridArea2 a {
+    font-family:'Source Sans Pro', serif,'Times New Roman',Times;
+    text-align: left;
+    color: #00698A;
+    font-size: 16px;
+  }
+
+  /*Media Query*/
+
+  @media only screen and (max-width: 600px) {
+
+    .nav {
+      display: none;
+    }
+
+    .hero {
+      display: flex;
+      width: 100%;
+      height: 600px;
+      margin-top: 0px;
+      margin-bottom: 100px;
+      padding-top: 15px;
+      background-image: url("../pictures/hero\ 2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      justify-content: center;
+      align-items:flex-start;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      height: 1300px;
+      margin-left: 0px;
+      align-items: flex-start;
+    }
+
+    .research {
+      margin-top: 20px;
+      background-color: #E8F2EF;
+      width: 100%;
+      height: 400px;
+      border-style: solid;
+      border-color:#00698A;
+      margin-bottom: 20px;
+      
+    }
+    
+    .definition {
+      margin-top: 20px;
+      background-color: #E8F2EF;
+      width: 100%;
+      height: 400px;
+      margin-left: 0px;
+      border-style: solid;
+      border-color:#00698A;
+      margin-bottom: 20px;
+    }
+  
+    .prototyping {
+      margin-top: 20px;
+      background-color: #E8F2EF;
+      width: 100%;
+      height: 400px;
+      margin-left: 0px;
+      border-style: solid;
+      border-color:#00698A;
+      margin-bottom: 20px;
+    }
+
+    #categoryGrid {
+      height: 2400px;
+      margin-bottom: 25px;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr; 
+      grid-template-areas:
+      "title1"
+      "adoptoneblock"
+      "title2"
+      "nasa"
+      "title3"
+      "mlord";
+
+  }
+
+  #adoptoneblock {
+    grid-area: adoptoneblock;
+    background-image: url("..//pictures/adoptoneblockdestopmockup.png");
+    background-size: 100%;
+    background-position: cover;   
+    margin-top: 0px; 
+    height: 250px;
+    background-position: bottom;
+  }
+
+  #nasa {
+    grid-area: nasa;
+    background-image: url("../pictures/nasadesktopmockup.png");
+    background-size: 100%;
+    background-position: cover;   
+    margin-top: 0px; 
+    height: 250px;
+    background-position: bottom;
+
+  }
+
+  #mlord {
+    grid-area: mlord;
+    background-image: url("../pictures/mlordhomepagemockup.png");
+    background-size: 100%;
+    background-position: cover;
+    height: 250px;
+    background-position: bottom;
+  }
+
+  #title1 {
+    grid-area: title1;
+    background-color: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+  }
+
+  #title2 {
+    grid-area: title2;
+    background-color: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+   
+  }
+
+  #title3 {
+    grid-area: title3;
+    background-color: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  
+  }
+
+  .heading {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%; 
+  }
+
+  .text h4 {
+    font-family: 'Playfair Display', serif, 'Times New Roman', Times;
+    text-align: left;
+    font-size: 20px;
+    color: #00698A;
+    margin-left: 0 auto;
+  }
+
+  .text li {
+    font-family:'Source Sans Pro', serif,'Times New Roman',Times;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 25px;
+    color:#00171E;
+    margin-left: 0 auto;
+  }
+
+  #categoryGrid2 {
+
+    margin-top: 0px;
+    width: 100%;
+    height: 499px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "footer"
+    "footer2"
+    "footer3";
+}
+  
+  }
+
+  /*CSS for Java Script Animations*/
+
+  .preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    background-color: white;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .preloader img {
+    animation: myAnimation 4s ease;
+    width: 150px;
+  }
+  
+  @keyframes myAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+      }
+    100% {
+      transform: rotate(720deg);
+    }
+  
+    }
+  
