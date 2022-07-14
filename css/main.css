@@ -55,7 +55,9 @@
     color: #00171E;
     text-align: right;
     margin-right: 100px;
-    padding: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    padding: 0px;
     list-style: none;
     font-family:'Source Sans Pro', serif,'Times New Roman',Times;
     font-size: 20px;
