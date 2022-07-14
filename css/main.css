@@ -306,7 +306,7 @@
   #categoryGrid2 {
 
     margin-top: 0px;
-    height: 300px;
+    height: 270px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 3fr 1fr 1fr;
@@ -342,6 +342,11 @@
   .text p {
     margin: 0px;
     margin-left: 80px;
+  }
+
+  .text h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
   }
 
   .categoryGridArea2 a {
